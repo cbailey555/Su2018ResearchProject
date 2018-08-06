@@ -1,0 +1,31 @@
+[package]
+name = "dvotp"
+version = "0.1.0"
+authors = ["cbailey555 <cbailey555<at>protonmail.ch>"]
+
+[[bin]]
+name = "dvotp"
+path = "src/main.rs"
+
+[lib]
+path = "src/lib/lib.rs"
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+swth_cli_libv2 = { path = "<path>/swth_cli_libv2" }
+sawtooth_sdk = { path = "<path>/sawtooth-core/sdk/rust" }
+zmq = { git = "https://github.com/erickt/rust-zmq", branch = "release/v0.8" }
+serde = "1.0.59"
+serde_derive = "1.0.59"
+serde_cbor = "0.8.2"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+clap = "2.31.2"
+log = "0.3.0"
+log4rs = "0.7.0"
+
+[dev-dependencies]
+rand = "0.5.1"
+#either = "1.5.0"

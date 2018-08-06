@@ -1,0 +1,24 @@
+[package]
+name = "dmktc"
+version = "0.1.0"
+authors = ["cbailey555 <cbailey555<at>protonmail.ch>"]
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+swth_cli_libv2 = { path = "<path>/swth_cli_libv2" }
+sawtooth_sdk = { path = "<path>/sawtooth-core/sdk/rust" }
+dmktp = { path = "<path>/market/dmktp" }
+clap = "2.31.2"
+serde = "1.0.59"
+serde_derive = "1.0.59"
+serde_cbor = "0.8.2"
+serde_json = "1.0.19"
+failure = "0.1.1"
+failure_derive = "0.1.1"
+hyper = "0.11"
+tokio-core = "0.1"
+futures = "0.1"
+base64 = "0.9.2"
+rand = "0.5.1"

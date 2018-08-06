@@ -1,0 +1,4 @@
+./market/dmktc/target/*
+./market/dmktp/target/*
+./voting/dvotp/target/*
+./voting/dvotc/target/*
