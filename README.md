@@ -6,4 +6,4 @@ Build instructions:
 
 2) Revise the local dependency paths in each Cargo.toml to point to the correct location on your system.
 
-3) Run `$ Cargo Build `
+3) Run `cargo build ` from the crate root of each component you'd like to build.
